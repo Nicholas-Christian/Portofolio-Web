@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- File CSS khusus -->
+</head>
+<body>
+    <!-- Navigasi dengan Bootstrap -->
+    <header class="bg-dark text-white p-3 fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="logo" href="#">My Portfolio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <button class="btn btn-link text-white nav-link" onclick="scrollToSection('home')">Home</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-link text-white nav-link" onclick="scrollToSection('about')">About Me</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-link text-white nav-link" onclick="scrollToSection('skills')">Skills</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-link text-white nav-link" onclick="scrollToSection('projects')">Projects</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-link text-white nav-link" onclick="scrollToSection('contact')">Contact</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section: Home -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, Its Me !</h3>
+            <h1>Nicholas Christian</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/nicholas-christian-04928832b"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="assets/home.png">
+        </div>
+    </section>
+
+<!-- Section: About Me -->
+<section id="about" class="about">
+    <div class="container d-flex align-items-center">
+        <div class="about-image">
+            <img src="assets/profile.png" alt="Nicholas Christian" class="img-fluid">
+        </div>
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>My name is Nicholas Christian, and I am currently pursuing a Bachelor’s degree in Computer Science with a specialization in Internet of Things (IoT). Throughout my academic journey, I have gained valuable experience in developing IoT projects using Arduino IDE, as well as creating Android applications. My passion for IoT drives me to pursue a career in this field, where I aspire to innovate and contribute to the advancement of technology.</p>
+            <p>In addition to my expertise in IoT, I possess skills in Android Studio and database management, which enable me to approach problems with a creative mindset. I am confident in my ability to continue growing and adapting, ensuring that I become a competent and professional individual in my field. I believe that continuous learning and improvement are essential in this rapidly evolving industry, and I am committed to enhancing my skills and knowledge.</p>
+            <p>I am excited about the opportunities ahead and look forward to making a positive impact for society in the future.</p>
+            <a href="LINK_TO_YOUR_CV" class="btn cv-btn">Download CV</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section: Skills -->
+    <section id="skills" class="vh-100 d-flex align-items-center justify-content-center bg-secondary text-white">
+        <div class="text-center">
+            <h1>Skills</h1>
+            <p>Daftar kemampuan kamu.</p>
+        </div>
+    </section>
+
+    <!-- Section: Projects -->
+    <section id="projects" class="vh-100 d-flex align-items-center justify-content-center bg-light">
+        <div class="text-center">
+            <h1>Projects</h1>
+            <p>Daftar proyek yang telah kamu kerjakan.</p>
+        </div>
+    </section>
+
+
+<!-- Section: Contact -->
+<section id="contact" class="contact">
+    <div class="text-center mb-4">
+        <h1 class="display-4">Contact Me</h1> 
+    </div>
+    <div class="container">
+        <div class="contact-info text-start"> 
+            <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-user-circle me-2"></i> 
+                <div>
+                    <h3>Nicholas Christian</h3>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+                <i class="fas fa-envelope me-2"></i> 
+                <div>
+                    <p>Email: nicholas.chrstian@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sosial Media -->
+        <div class="social-media mt-4">
+            <a href="https://www.instagram.com/nicholasicho" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nicholas-christian-04928832b" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Nicholas-Christian" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100011145706053&locale=id_ID" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Bootstrap JavaScript Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Custom JavaScript to handle scrolling -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
