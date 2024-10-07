@@ -28,11 +28,12 @@ body {
 }
 
 .home-image img {
-    max-width: 450px;
+    max-width: 50%;
+    height: auto;
     margin-right: -20px;
-    opacity: 0; /* Mulai dengan opacity 0 */
+    opacity: 0; 
     animation: zoomIn 1.5s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 2s; /* Mengatur jeda untuk animasi zoom dan float */
+    animation-delay: 2s, 2s; 
 }
 
 .home-content {
